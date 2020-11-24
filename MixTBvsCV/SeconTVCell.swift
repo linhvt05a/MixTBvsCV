@@ -9,7 +9,6 @@
 import UIKit
 
 class SeconTVCell: UITableViewCell {
-     var delegate : gotoDetail?
     let datas = [
         ItemModel(title: "AirPods", image: "8"),
         ItemModel(title: "HomePod ", image: ""),
@@ -92,6 +91,11 @@ extension SeconTVCell : UICollectionViewDelegateFlowLayout {
 }
 extension SeconTVCell : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.goDetail(indexPath.row)
+//        AppDelegate.window
+        if let nv = UIApplication.shared.windows.first?.rootViewController as? UINavigationController {
+            let vcc = ProductDetailViewController()
+            nv.pushViewController( vcc, animated: true)
+        }
+            
     }
 }
