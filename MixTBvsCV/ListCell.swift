@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ListCell: UITableViewCell {
+class ListCell: UITableViewCell, gotoDetail {
+    func goDetail(_ index: Int) {
+        print(index)
+    }
+    
     var itemModel = [ItemModel]()
     lazy var collectionList: UICollectionView = {
        let listItem = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
@@ -49,13 +53,13 @@ extension ListCell : UICollectionViewDelegate {
 
 extension ListCell : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return itemModel.count
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionList.dequeueReusableCell(withReuseIdentifier: "ListCVCell", for: indexPath) as! ListCVCell
         let data = itemModel[indexPath.row]
-        cell.setData(data)
+         cell.setData(data)
         return cell
     }
     

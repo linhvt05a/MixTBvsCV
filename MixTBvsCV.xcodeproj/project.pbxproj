@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847BF7B1256D141C00DE5DCD /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BF7B0256D141C00DE5DCD /* ProductDetailViewController.swift */; };
 		84DCC738256CA42F00DF42BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCC737256CA42F00DF42BE /* AppDelegate.swift */; };
 		84DCC73A256CA42F00DF42BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCC739256CA42F00DF42BE /* SceneDelegate.swift */; };
 		84DCC73C256CA42F00DF42BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCC73B256CA42F00DF42BE /* ViewController.swift */; };
@@ -22,6 +23,8 @@
 		84DCC774256CC21C00DF42BE /* SeconCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCC772256CC21C00DF42BE /* SeconCVCell.swift */; };
 		84DCC775256CC21C00DF42BE /* SeconCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DCC773256CC21C00DF42BE /* SeconCVCell.xib */; };
 		84DCC778256CC35600DF42BE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCC777256CC35600DF42BE /* Extension.swift */; };
+		84DCC77B256CC5C700DF42BE /* SeconTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCC779256CC5C700DF42BE /* SeconTVCell.swift */; };
+		84DCC77C256CC5C700DF42BE /* SeconTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DCC77A256CC5C700DF42BE /* SeconTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		847BF7B0256D141C00DE5DCD /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		84DCC734256CA42F00DF42BE /* MixTBvsCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixTBvsCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DCC737256CA42F00DF42BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DCC739256CA42F00DF42BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		84DCC772256CC21C00DF42BE /* SeconCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconCVCell.swift; sourceTree = "<group>"; };
 		84DCC773256CC21C00DF42BE /* SeconCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeconCVCell.xib; sourceTree = "<group>"; };
 		84DCC777256CC35600DF42BE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		84DCC779256CC5C700DF42BE /* SeconTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconTVCell.swift; sourceTree = "<group>"; };
+		84DCC77A256CC5C700DF42BE /* SeconTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeconTVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				84DCC737256CA42F00DF42BE /* AppDelegate.swift */,
 				84DCC739256CA42F00DF42BE /* SceneDelegate.swift */,
 				84DCC73B256CA42F00DF42BE /* ViewController.swift */,
+				847BF7B0256D141C00DE5DCD /* ProductDetailViewController.swift */,
 				84DCC740256CA43000DF42BE /* Assets.xcassets */,
 				84DCC742256CA43000DF42BE /* LaunchScreen.storyboard */,
 				84DCC745256CA43000DF42BE /* Info.plist */,
@@ -127,6 +134,8 @@
 				84DCC76C256CA9BF00DF42BE /* ListCVCell.xib */,
 				84DCC772256CC21C00DF42BE /* SeconCVCell.swift */,
 				84DCC773256CC21C00DF42BE /* SeconCVCell.xib */,
+				84DCC779256CC5C700DF42BE /* SeconTVCell.swift */,
+				84DCC77A256CC5C700DF42BE /* SeconTVCell.xib */,
 			);
 			path = MixTBvsCV;
 			sourceTree = "<group>";
@@ -273,6 +282,7 @@
 				84DCC775256CC21C00DF42BE /* SeconCVCell.xib in Resources */,
 				84DCC744256CA43000DF42BE /* LaunchScreen.storyboard in Resources */,
 				84DCC76A256CA60900DF42BE /* ListCell.xib in Resources */,
+				84DCC77C256CC5C700DF42BE /* SeconTVCell.xib in Resources */,
 				84DCC741256CA43000DF42BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,12 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DCC77B256CC5C700DF42BE /* SeconTVCell.swift in Sources */,
 				84DCC73C256CA42F00DF42BE /* ViewController.swift in Sources */,
 				84DCC774256CC21C00DF42BE /* SeconCVCell.swift in Sources */,
 				84DCC769256CA60900DF42BE /* ListCell.swift in Sources */,
 				84DCC76D256CA9BF00DF42BE /* ListCVCell.swift in Sources */,
 				84DCC771256CB64600DF42BE /* ListDataModel.swift in Sources */,
 				84DCC738256CA42F00DF42BE /* AppDelegate.swift in Sources */,
+				847BF7B1256D141C00DE5DCD /* ProductDetailViewController.swift in Sources */,
 				84DCC73A256CA42F00DF42BE /* SceneDelegate.swift in Sources */,
 				84DCC778256CC35600DF42BE /* Extension.swift in Sources */,
 			);
