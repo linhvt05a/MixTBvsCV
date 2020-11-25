@@ -99,4 +99,10 @@ extension UIView
         self.layer.shadowRadius = 6
         self.layer.shadowOpacity = 0.1
     }
+    
+    func loadViewFromNib(nibName: String) -> UIView? {
+        let bundle  = Bundle(for: type(of: self))
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+    }
 }

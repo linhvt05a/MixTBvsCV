@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844FC564256E004800242696 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC563256E004800242696 /* MainTabView.swift */; };
+		844FC568256E0A9300242696 /* LiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC567256E0A9300242696 /* LiveVC.swift */; };
+		844FC56A256E0B7B00242696 /* TabarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC569256E0B7B00242696 /* TabarModel.swift */; };
+		844FC56C256E0DB900242696 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC56B256E0DB900242696 /* AccountVC.swift */; };
+		844FC56E256E0DCD00242696 /* BagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC56D256E0DCD00242696 /* BagVC.swift */; };
+		844FC570256E0DE100242696 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC56F256E0DE100242696 /* FavoritesVC.swift */; };
+		844FC57D256E53C600242696 /* ThirstTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844FC57B256E53C600242696 /* ThirstTVCell.xib */; };
+		844FC580256E555800242696 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC57F256E555800242696 /* Constant.swift */; };
+		844FC584256E5C8A00242696 /* ThirstTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC583256E5C8A00242696 /* ThirstTVCell.swift */; };
+		844FC587256E5CC400242696 /* ThirstCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC585256E5CC400242696 /* ThirstCVCell.swift */; };
+		844FC588256E5CC400242696 /* ThirstCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844FC586256E5CC400242696 /* ThirstCVCell.xib */; };
 		847BF7B1256D141C00DE5DCD /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BF7B0256D141C00DE5DCD /* ProductDetailViewController.swift */; };
 		84D865F3256DF29C0002679E /* SeconTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D865F2256DF29C0002679E /* SeconTVCell.swift */; };
 		84DCC738256CA42F00DF42BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DCC737256CA42F00DF42BE /* AppDelegate.swift */; };
@@ -45,6 +56,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844FC563256E004800242696 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		844FC567256E0A9300242696 /* LiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVC.swift; sourceTree = "<group>"; };
+		844FC569256E0B7B00242696 /* TabarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarModel.swift; sourceTree = "<group>"; };
+		844FC56B256E0DB900242696 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		844FC56D256E0DCD00242696 /* BagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagVC.swift; sourceTree = "<group>"; };
+		844FC56F256E0DE100242696 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		844FC57B256E53C600242696 /* ThirstTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirstTVCell.xib; sourceTree = "<group>"; };
+		844FC57F256E555800242696 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		844FC583256E5C8A00242696 /* ThirstTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirstTVCell.swift; sourceTree = "<group>"; };
+		844FC585256E5CC400242696 /* ThirstCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirstCVCell.swift; sourceTree = "<group>"; };
+		844FC586256E5CC400242696 /* ThirstCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirstCVCell.xib; sourceTree = "<group>"; };
 		847BF7B0256D141C00DE5DCD /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		84D865F2256DF29C0002679E /* SeconTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeconTVCell.swift; path = MixTBvsCV/ProductView/Cell/TVxib/SeconTVCell.swift; sourceTree = SOURCE_ROOT; };
 		84DCC734256CA42F00DF42BE /* MixTBvsCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixTBvsCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,10 +118,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844FC562256E002F00242696 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				844FC563256E004800242696 /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		844FC57E256E554A00242696 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				844FC57F256E555800242696 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		84D865EB256DF15D0002679E /* ProductView */ = {
 			isa = PBXGroup;
 			children = (
-				84D865F4256DF2BD0002679E /* VC */,
 				84D865ED256DF1940002679E /* Cell */,
 			);
 			path = ProductView;
@@ -127,6 +164,7 @@
 		84D865EE256DF1AE0002679E /* TVcell */ = {
 			isa = PBXGroup;
 			children = (
+				844FC583256E5C8A00242696 /* ThirstTVCell.swift */,
 				84D865F2256DF29C0002679E /* SeconTVCell.swift */,
 				84DCC767256CA60900DF42BE /* ListCell.swift */,
 			);
@@ -138,6 +176,7 @@
 			children = (
 				84DCC772256CC21C00DF42BE /* SeconCVCell.swift */,
 				84DCC76B256CA9BF00DF42BE /* ListCVCell.swift */,
+				844FC585256E5CC400242696 /* ThirstCVCell.swift */,
 			);
 			path = CVcell;
 			sourceTree = "<group>";
@@ -147,6 +186,7 @@
 			children = (
 				84DCC773256CC21C00DF42BE /* SeconCVCell.xib */,
 				84DCC76C256CA9BF00DF42BE /* ListCVCell.xib */,
+				844FC586256E5CC400242696 /* ThirstCVCell.xib */,
 			);
 			path = CVxib;
 			sourceTree = "<group>";
@@ -154,18 +194,64 @@
 		84D865F1256DF2170002679E /* TVxib */ = {
 			isa = PBXGroup;
 			children = (
+				844FC57B256E53C600242696 /* ThirstTVCell.xib */,
 				84DCC768256CA60900DF42BE /* ListCell.xib */,
 				84DCC77A256CC5C700DF42BE /* SeconTVCell.xib */,
 			);
 			path = TVxib;
 			sourceTree = "<group>";
 		};
-		84D865F4256DF2BD0002679E /* VC */ = {
+		84D865F5256DFD370002679E /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				844FC562256E002F00242696 /* MainTab */,
+				84D865FA256DFD8C0002679E /* FavoritesVC */,
+				84D865F9256DFD7E0002679E /* BagVC */,
+				84D865F8256DFD6F0002679E /* AccountVC */,
+				84D865F7256DFD620002679E /* LiveVC */,
+				84D865F6256DFD4C0002679E /* HomeVC */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		84D865F6256DFD4C0002679E /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
 				84DCC73B256CA42F00DF42BE /* ProductVC.swift */,
 			);
-			path = VC;
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		84D865F7256DFD620002679E /* LiveVC */ = {
+			isa = PBXGroup;
+			children = (
+				844FC567256E0A9300242696 /* LiveVC.swift */,
+			);
+			path = LiveVC;
+			sourceTree = "<group>";
+		};
+		84D865F8256DFD6F0002679E /* AccountVC */ = {
+			isa = PBXGroup;
+			children = (
+				844FC56B256E0DB900242696 /* AccountVC.swift */,
+			);
+			path = AccountVC;
+			sourceTree = "<group>";
+		};
+		84D865F9256DFD7E0002679E /* BagVC */ = {
+			isa = PBXGroup;
+			children = (
+				844FC56D256E0DCD00242696 /* BagVC.swift */,
+			);
+			path = BagVC;
+			sourceTree = "<group>";
+		};
+		84D865FA256DFD8C0002679E /* FavoritesVC */ = {
+			isa = PBXGroup;
+			children = (
+				844FC56F256E0DE100242696 /* FavoritesVC.swift */,
+			);
+			path = FavoritesVC;
 			sourceTree = "<group>";
 		};
 		84DCC72B256CA42F00DF42BE = {
@@ -191,6 +277,8 @@
 		84DCC736256CA42F00DF42BE /* MixTBvsCV */ = {
 			isa = PBXGroup;
 			children = (
+				844FC57E256E554A00242696 /* Constant */,
+				84D865F5256DFD370002679E /* MainVC */,
 				84D865EC256DF1730002679E /* ProductDetailView */,
 				84D865EB256DF15D0002679E /* ProductView */,
 				84DCC776256CC34700DF42BE /* Extension */,
@@ -225,6 +313,7 @@
 		84DCC76F256CB62500DF42BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				844FC569256E0B7B00242696 /* TabarModel.swift */,
 				84DCC770256CB64600DF42BE /* ListDataModel.swift */,
 			);
 			path = Model;
@@ -342,7 +431,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844FC588256E5CC400242696 /* ThirstCVCell.xib in Resources */,
 				84DCC76E256CA9BF00DF42BE /* ListCVCell.xib in Resources */,
+				844FC57D256E53C600242696 /* ThirstTVCell.xib in Resources */,
 				84DCC775256CC21C00DF42BE /* SeconCVCell.xib in Resources */,
 				84DCC744256CA43000DF42BE /* LaunchScreen.storyboard in Resources */,
 				84DCC76A256CA60900DF42BE /* ListCell.xib in Resources */,
@@ -372,15 +463,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844FC568256E0A9300242696 /* LiveVC.swift in Sources */,
 				84DCC73C256CA42F00DF42BE /* ProductVC.swift in Sources */,
+				844FC56E256E0DCD00242696 /* BagVC.swift in Sources */,
 				84DCC774256CC21C00DF42BE /* SeconCVCell.swift in Sources */,
 				84D865F3256DF29C0002679E /* SeconTVCell.swift in Sources */,
+				844FC56A256E0B7B00242696 /* TabarModel.swift in Sources */,
 				84DCC769256CA60900DF42BE /* ListCell.swift in Sources */,
 				84DCC76D256CA9BF00DF42BE /* ListCVCell.swift in Sources */,
+				844FC570256E0DE100242696 /* FavoritesVC.swift in Sources */,
+				844FC584256E5C8A00242696 /* ThirstTVCell.swift in Sources */,
+				844FC587256E5CC400242696 /* ThirstCVCell.swift in Sources */,
+				844FC564256E004800242696 /* MainTabView.swift in Sources */,
 				84DCC771256CB64600DF42BE /* ListDataModel.swift in Sources */,
 				84DCC738256CA42F00DF42BE /* AppDelegate.swift in Sources */,
+				844FC56C256E0DB900242696 /* AccountVC.swift in Sources */,
 				847BF7B1256D141C00DE5DCD /* ProductDetailViewController.swift in Sources */,
 				84DCC73A256CA42F00DF42BE /* SceneDelegate.swift in Sources */,
+				844FC580256E555800242696 /* Constant.swift in Sources */,
 				84DCC778256CC35600DF42BE /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

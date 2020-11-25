@@ -16,7 +16,7 @@ class SeconTVCell: UITableViewCell {
         ItemModel(title: "MacBook ", image: ""),
         ItemModel(title: "Iphone ", image: ""),
         ItemModel(title: "Accessories ", image: ""),
-        ItemModel(title: "Imac ", image: "")
+        ItemModel(title: "Imac ", image: ""),
     ]
     var estimateWidth = 172.0
     var cellMarginSize = 16.0
@@ -42,15 +42,14 @@ class SeconTVCell: UITableViewCell {
         flow.sectionInset = UIEdgeInsets(top: contentView.top, left: contentView.left + 20, bottom: contentView.bottom, right: contentView.bottom - 22)
     }
     
-    func setup() -> CGFloat{
+    func setup() -> CGFloat {
         contentView.addSubview(seconCVlist)
         seconCVlist.translatesAutoresizingMaskIntoConstraints = false
-        seconCVlist.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20).isActive = true
+        seconCVlist.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         seconCVlist.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         seconCVlist.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         seconCVlist.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-        
-        return 700
+        return contentView.height * CGFloat(datas.count)
     }
 }
 
@@ -91,12 +90,12 @@ extension SeconTVCell : UICollectionViewDelegateFlowLayout {
 }
 extension SeconTVCell : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        AppDelegate.window
         if let nv = UIApplication.shared.windows.first?.rootViewController as? UINavigationController {
             let vcc = ProductDetailViewController()
             let data = datas[indexPath.row].title
             vcc.setData(data)
-            nv.pushViewController( vcc, animated: true)
+            nv.pushViewController(vcc, animated: true)
+  
         }
             
     }

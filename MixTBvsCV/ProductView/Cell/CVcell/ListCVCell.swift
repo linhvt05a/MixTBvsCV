@@ -13,8 +13,19 @@ class ListCVCell: UICollectionViewCell {
     lazy var title : UILabel = {
         let text = UILabel()
         text.numberOfLines = 0
+        text.textColor = .white
         return text
     }()
+    
+    lazy var view : UIView = {
+           let bg = UIView()
+           bg.backgroundColor = #colorLiteral(red: 0.2372537851, green: 0.2372848392, blue: 0.2372359037, alpha: 1)
+           bg.layer.cornerRadius = 10
+           bg.clipsToBounds = true
+           return bg
+       }()
+      
+    
     let imageview = UIImageView()
 
     override func awakeFromNib() {
@@ -22,11 +33,11 @@ class ListCVCell: UICollectionViewCell {
         // Initialization code
         setupTitle()
         setupImage()
-        
+        contentView.addSubview(view)
     }
     func setData(_ data: ItemModel){
         self.title.text = data.title
-        self.imageview.image = UIImage(named: data.image)
+//        self.imageview.image = UIImage(named: data.image)
     }
     
     func setupTitle(){

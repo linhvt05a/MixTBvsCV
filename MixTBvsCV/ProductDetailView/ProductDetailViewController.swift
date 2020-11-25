@@ -18,10 +18,11 @@ class ProductDetailViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.addSubview(listDetail)
         self.title = "\(titles)"
+          
     }
-    
+   
     func setData(_ txt: String){
         self.titles = txt
     }
