@@ -24,7 +24,7 @@ class SeconTVCell: UITableViewCell {
         let list = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         list.delegate = self
         list.dataSource = self
-        list.backgroundColor = .white
+        list.backgroundColor = .black
         list.showsVerticalScrollIndicator = false
         list.isScrollEnabled = false
         return list
@@ -94,6 +94,8 @@ extension SeconTVCell : UICollectionViewDelegate {
 //        AppDelegate.window
         if let nv = UIApplication.shared.windows.first?.rootViewController as? UINavigationController {
             let vcc = ProductDetailViewController()
+            let data = datas[indexPath.row].title
+            vcc.setData(data)
             nv.pushViewController( vcc, animated: true)
         }
             

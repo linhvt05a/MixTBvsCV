@@ -8,11 +8,7 @@
 
 import UIKit
 
- protocol gotoDetail {
-    func goDetail(_ index: Int)
-}
-
-class ViewController: UIViewController, gotoDetail {
+class ProductVC: UIViewController {
   
     
 
@@ -58,7 +54,7 @@ class ViewController: UIViewController, gotoDetail {
 
 
 
-extension ViewController : UITableViewDataSource {
+extension ProductVC : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -78,6 +74,6 @@ extension ViewController : UITableViewDataSource {
     
 }
 
-extension ViewController : UITableViewDelegate {
+extension ProductVC : UITableViewDelegate {
     
 }

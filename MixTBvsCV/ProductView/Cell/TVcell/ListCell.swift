@@ -8,17 +8,14 @@
 
 import UIKit
 
-class ListCell: UITableViewCell, gotoDetail {
-    func goDetail(_ index: Int) {
-        print(index)
-    }
+class ListCell: UITableViewCell {
     
     var itemModel = [ItemModel]()
     lazy var collectionList: UICollectionView = {
        let listItem = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         listItem.delegate = self
         listItem.dataSource = self
-        listItem.backgroundColor = .white
+        listItem.backgroundColor = .black
         return listItem
     }()
     
